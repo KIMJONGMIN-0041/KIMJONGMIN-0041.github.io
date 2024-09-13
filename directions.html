@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스펀지밥 집 찾기</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header, footer {
+            background-color: #ffcc00;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+        }
+        .map-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .map-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 500px;
+            border: 0;
+        }
+        .info {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>스펀지밥 집 찾기</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">메인 페이지</a>
+        <a href="history.html">역사 소개</a>
+        <a href="directions.html">길 찾기</a>
+        <a href="characters.html">등장인물</a>
+        <a href="episodes.html">추천 에피소드</a>
+    </nav>
+
+    <main>
+        <section class="map-container">
+            <h2>스펀지밥의 집</h2>
+            <p>아래의 지도를 통해 스펀지밥의 집 위치를 확인할 수 있습니다.</p>
+            <img src="map.jpg" alt="지도" style="width:100%;max-width:600px;">
+        </section>
+    </main>
+</body>
+</html>
