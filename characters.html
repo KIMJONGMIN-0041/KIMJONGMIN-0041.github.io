@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스펀지밥 페이지</title>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #ffcc00;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+        }
+        .bd-placeholder-img {
+            border-radius: 50%;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .col-lg-4 p {
+            margin: 0;  /* 여백 제거 */
+        }
+        .row > .col-lg-4 {
+            margin-bottom: 70px; /* 세로 여백 */
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>스펀지밥의 모험</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">메인 페이지</a>
+        <a href="history.html">역사 소개</a>
+        <a href="directions.html">길 찾기</a>
+        <a href="characters.html">등장인물</a>
+        <a href="episodes.html">추천 에피소드</a>
+    </nav>
+
+    <main>
+        <div class="container marketing">
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                  <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="data:image/png;base64,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" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">스폰지밥</h2>
+                  <p>생일: 7월 14일</p>
+                  <p>성별: 남성</p>
+                  <p>종족: 해면동물</p>
+                  <p>거주지: 비키니시티 조개 거리 124번지 파인애플집</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 text-center">
+                  <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHgAeAMBEQACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAABgQFAQMHAv/EAEEQAAIBAwEFBgIHBQUJAAAAAAECAwAEEQUGEiExQRMiUWFxgTKhFBVCcpHB0SNSYoKxB0NT4fAlNURjdKOywtL/xAAaAQEAAgMBAAAAAAAAAAAAAAAABAUBAgMG/8QAOBEAAgIBAQUFBgUCBwEAAAAAAAECAxEEBRIhMUETUWGB0TJxkbHB8BQiQqHhIzMVFjRSYoLxBv/aAAwDAQACEQMRAD8A7jQBQBQBQBQBQGDyoBM2q1Rr2dtPgOLaI/tiP7x/3fQdfE8Ohqv1Nrk9xcupfbO0vZxV0ub5eC7/AD6fEo23xu7uMZ7xPQVFLJFls7YNqOqq5BFtZsryfxvzVfbgT7V309e/PL5Ih6/UKinC9qXLwXV+fIfqszzYUAUAUAUAUAUAUAUAUAUBS7UazFpGnktPHHcTsIYA7AZc9QOuOdc7ZuMMrmSNLVGy1KfLr6CUqbowCTjmTxNVJ6jJ66UA2bFKv1VIwHFrmQk+JBx/QCrHSL+n5sodqt9ul4IYaklaFAFAFAFAFAFAFAFAFAeJZUijaSV1RFGWZjgAeZoDmG1Fnouv7T/WS9ndtbRpGjJICuc5zw58wOOeVQtRbNS3VyLnQaWqUFZLiyv2j0k6xY/R4ryW0mU78bxHkehI8PnUeqe48tZJ2op7WOE8Mk6VFdw6dBHqEwmuVQCR/E/n61rNpybR0pU4wSm8sediv9zt/wBTL/5VO0n9vzZS7V/1HkvkMFSSuCgCgCgCgK/Xr9tN017iNA8mQqKxwCScca53WdnDeJGlo7e1Qb+0Uen7VlJAmqxIiH+/izur94HkPPJ9qjQ1f+9Y8Swu2VwzS8+D5+Q1RyLKgdCGVhkEHIIqYnnkVDTTwz1WTAUBVGOLUb2WW5Aa2s33Y0b4WkABZz44zgeBDeWAKS6n0ja6Kzk0e9jmk7ZkF1BjKIuO0HHmDlQOmSp6VrOCmsM6VWzqeYssLfR9nbuKe0tIrKV4G7OZonDSxPj7TjvBvU5puRxjBjtJ729niKG68UkkMjbzwyPEWxje3SVz74z71V2R3ZtHptNY7KlNjXsOxOm3S/u3j8PUKfzqXo/7bXiyq2usXRf/ABX1GSpZVhQGCcUBX3muaZZS9ldX1vHKOJRpBkDxI6DzNc5XVxeGyRXpNRat6EG0T43WRFdGDKwyCDkEV0TycGmnhlVtVA0+hXO4CXiAlAHXdOSPwBrhqYuVTwS9nzUNTHPXh8eAkKQVBB4EcKrD0mO8n6Nq02kybg3pLNj3oc/B5p+nL8+9N7r4dCHq9HHULK4S7+/3+o82tzDdwJPbyLJG44MpqxjJSWUeenCVcnGSw0bq2NCm0kw3FvqWnyEM8V1Mk6huOJCZF9Mq4oCo2Z0DS9kb+z0fTnbdkt7iVRK+XJ3494+mN0e1Aedjdj7PYg63fSag85vpjPLLKN0RopYgc+J7xyetBjoUQdppJZ3BBmleXdPNd5iwHsCBVTbLem2eo0tbrpjFjJsO+PrGEniJkkx6rj/1qTonwkvEgbYjxrl4NfB/yNeamlMQdV1S00yDtbqXBY4RF4u58AOtc7LY1rMjvRprNRLdgvQTdS1rUNTJXfa0tv8ACibvt95x/QfiagWaic/BF9p9DTRxf5pd75eS+r+BXbsUEZICogGSeQ9TXDgiY8yeDoGzsD22h2UMi7rLEMr+7njj25Va0Rca4pnl9ZYrNROS7ye4BGDy611Ixza6szpt9NYHO7EcxE9Yz8P4cR/LVROHZycT1lN3b1q3v5+/r6+Z4csF/Z43ugNacToSdPvrnTZTLasMNxeFj3X/AEPmPnXSuyVbzH4HC/TV3xxPyfVffcN9jrtndWkswcRmFC8sbkBkA6+Y8+VWEL4SjkoLtHbVNQxnPJ9/33CN20kt/NeRTy295J3naGTdYKSSAw5EAcBkelQVdNNtdS6lo6JRUJdFgyA4n+kiaY3OQ3blyz5HLifU8OXE8MGsdtPe3sm34SlQ3McDTrO0ASJBrerqY1OViO6u8w67qjLH5eVdJW2WLBwhpdPTLPNlNoW0D6vqd3Hbwb9lFukTN3GGc8N3qOB8D5VpOCjFPqd4W2Oxxa4Dxse4j1i4BPGe3HDzRj/9mumkeLGu9HDaq3qIvufzX8Fvrm0EdkTb2oWa7xxGe7F97z8ufpzqRdeocFzK/SaGV35p8I/P3eooSNJPO09xI0s7c5G8PAeA8hVdKTlLL5l/CEYR3YLCChsS9G0/621FYnGbWAh5z0Y9E9+Z8vWulFfaT8Fz9CLrNR+HqyvalwX1f319x0EcqtTzJmgFvbHTzNbLfwKTNbfGAMlovtD25+x8aiaqpyjvLmvkWmzNQoWdlLlL59PQVVIIyDkHkR1qAXhmsgizYnuVhHER96T8lrR8Xg6R/LHe7/vIsf2jXCxW1iiMUuGkZ1ZGKsEA48Rx5kVIqbSZDsjGU0mJTX9+w3W1C9YeBuX/AFrfeZnsYfeSNwyWON4/ETzo3Jm6jGCzjB1DYrS207RkaVd2e5PaupHFQQN0fhz8ya5WSy8Loa1ZeZPqXSTTi5V7SRoTGTmVeZyMEDP9a5qUk8xeDtOuEouM1nPQ2IoUEDqckk5JPmep86ACwGMkDJwKAFSWeaO2tUD3EpwinkPEnwA/10rZRcmkuZrKcIRc58kdA0jTo9Ls0t4jvY7zuebseZNWldarjuo8xqL5X2Ocv/F3E6uhwCgMMAQc0Bz7V9O+qb4wKMW0mXtzjgo6p6g/Ijwqqur7OWOjPTaTU/iK95+0ufr5/Mr7ibsYi2MtyVRzYnkK4yeFkmQjvPBp7GeK2YQsn0gtvszjIZs8QeoHTyrMEk/zGlzcvZ8hFewu9V2ikfadvoMY5En9mVHJUbl78+PLpU2MU1iPIiV2qGXZzfwGRtN2W7JI4YUnCnituHld/Urk4/CtnFLmb/ik/ZefcSI9ItrmSJ5NMtrWCJg0cKopdyORcjlj90E9MnpXGdqXCJlRss4z4Lu9S5qOSAwMYxwrACgNcpVQGYEkHugDJyeAA8znFGZWR02Z0Y6fAbi6UG9mA3+ojXog/M9T7VZaens1mXNnntfq+3luQ9lcvHxL2pBXhQBQBQFfrmnR6nYtDIwR178ch+ww5H9fLNcra1ZHDJGl1EqLFJea70c3tw9xL28uN1CVjCnIPHBbPXOOHlVOll5Z62WIx3V15+nqSmzjhz863ORhA24A7AnHHHLNOIeD15dPCsmMBWDIUAUAE4rIL3ZTSe3lTU7pe4M/RUI/7n6eXHrUvS05/qS8ip2lqt3NEP8At6ev8DeBipxSmaAKAKAKAX9tLho9MS2jJBu37JiOYTBLfjjHvUbVTxDC6llsupSu33+nj59BPBAYRqDwXoOA8qrvAvvE9igCgCgCgCgCgNU8bTL2eSEbg5B448Kw1ngbRluvI+bM3Ru9IgaQ5ljzE58SvDPuMH3q1onvwTPMa6nsr5JcnxXmW1diIFAFAFAFAJ23t4IbvTYCvdKyyu+fgA3Fz6ZYelQ9ZjEU+ZP2feqrMS/VwKOoR6EKwABoDyxYOoVcrnvHPKgPVAFAFABrIGLYS6jlXUII2yY5wTwPVccPHipHqDU/SpqLKHadkJ2rdfFLD+I11KK0KAKAKAKAR9trQTbQ2LHAc2UvZuU3t3DpkHxBDYI6geVU+2ZuFcX0zx+nn3GGK1neokr2yEuYmZDCDmRMEg7v+IvDhjvDhkGueLK4RlcsJrhLo89/cy10m0HFKNvLvN12TdRBrVu2QErJGjAEg+vAEeB867QwWkpdosweUbbR5n4SROoH25SoYnyC8AKxJI3rcnzRJrQ6hQBQGuWaOPdDnvN8KgZZvQDiaPgsvkc7LYVrMngjhp75zFCpCA4bvYPuw5fdGW8d3nUW7VwrWU/vwX15e8pdVtJyW7V8Rm2FtBb6rqZViwEFvG3QBgZDgDkAAVwByqfsibsocn1b+n3krIjnVqZCgCgCgCgFzbSHFtaX44C1lxKfCNxun2DbhPkDVftSh3aWSjzXH4GGjmeuaOtrJc3M869nI5aBAuWeQ8cHwA8a67K2rLVVw00K8tLEs8sLh9o2jJ+yV0N/cxurlxMy4AaXO+B4BwQ2PIkjyqxu2PTLLq/J7uXwO0d6DzB4ZYQ664wshlXjzZFl+YKH5H3qvs2Xq4cUlL3PD/fJLhr9RHnhk+11Q3RYQGOQoAWxDOMZ9EI6eNV+o39NjtoOOfGPqdP8WkucP3JAnunOFjGf4YZj/VFHzqK9ZWlnH7r+TD2u+kD2trqM+N/MS58Vj4eeC5PsVrhPaEV7Pr6L5kezad0uXAkW2kxoG7Zt8v8AGiLuq/3jks38zEeVQLdZKb4fvxfovJECU5SeZPJPCpDFgKqRovIDAUConGUu9s0L7Ym1aPSWvZVKvqEpud0jBVCAEHruKufMmveaOjsKI1vmvmdUMNSQFAFAFAFAarmCK5gkguEWSKVCjowyGUjBBoDis779qsOpyslgZn+r9RJ3gq7xVEmPmMYbkeGTnnR1ahaTWTnpll8pR7+uYmE8PJqm2f1ONiEgWZejRyLgj3xV5V/9FoJr80t19zXodVaupOGzM8un2neihukDCQEZDAsSOI6gVVf5kqq1VrScq3jHg8YfkzmrMMu9I02PTLXslYu7HekfGN4+ngK8/tPaM9fd2klhLkjRyyydVcYM0MFDtLrD2eLS2JWZ03mkx8Cnhw8zg16TYOyIap9vd7KfLvfoda45IOx+i3e0OqjtJJvq2Fs3jl2xL/yh45+1/Dw6ivV6muiMVCMFw8FwNpbvJHZwMAAVGNTNAFAFAFAFAQ9YhurnSryCwmEF1JA6QykZCOVIU+xoBAsOxiiGlyRGC4tolSS0lwXVQMA/xKcHDDgfxFeI1unvoucp9+cmj4EcaTLZj/Y10bVB/wALInaQD0GQV/lIHlWn4qNv9+O94rg/580YybLW91R75bObSHlmKNIrWkyOhVSAThypHxLwwedd6tnrUpuiWcdHwfoZwTGuCjbs9teQHwktZB88Y+daT2Xq4/oz+4wYsbpL237eNSFLuoz13WK5+VRb6XTNwfMwbLiZbe3lnk+CNCxx4CsU1SusjXHm2l8QJmpaxFqcEi3NmEn4djLE3FBniGPXr/lzr32g2NbobYuq3Mf1J9fcdowaZ0z+zWJYdidMiC43UfPiTvtnPnXWftM1Yz1qAoAoAoD/2Q==" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">뚱이</h2>
+                  <p>생일: 8월 17일</p>
+                  <p>성별: 남성</p>
+                  <p>종족: 불가사리</p>
+                  <p>거주지: 비키니시티 바위 집</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 text-center">
+                  <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://i.namu.wiki/i/tUxIDFXCqEeQtX3iz7eNXEWGOdZ6WWPFE1D7PlO-A9tYMLCJXOmAN1YgoX-6KhTDWrmRBNx-_2ILQNz6inuE3dKRSgozKlT9J4jro-ut2wWr9f0AU-LtgcasL7-Cu3EPJSbVTv8kUtqYQ5u0JD71tQ.webp" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">징징이</h2>
+                  <p>생일: 10월 9일</p>
+                  <p>성별: 남성</p>
+                  <p>종족: 문어</p>
+                  <p>거주지: 비키니시티 고동로 122 모아이 석상 모양 집</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 text-center">
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://i.namu.wiki/i/QIGMvNsN5Z5gJL-GSFeFXPgBhspF6btbhXgCDegAKDR6sp52Q-1zuBQVzjUQutEcwYEnYHqo9llUhehUOLDavex4A1gVSbIS31D04IL11fUUYcTDRRPMw1Tz7WsWa6YJg4bTCDnBWuOLK5V57qXqfg.webp" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                    <h2 class="fw-normal">다람이</h2>
+                    <p>생일: 11월 17일</p>
+                    <p>성별: 여성</p>
+                    <p>종족: 문어</p>
+                    <p>거주지: 비키니시티 유리돔 집</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 text-center">
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://i.namu.wiki/i/yR8s5j3BDD-ca6ppG803uNNTDSu7BrXptl6Zv7TY_MEwh9qbY-tBwGLot9v3x0BO9awefnkzP3b9eyL3MhH3BrbYDzv4L6HusQPZwOeZ0XCrIixTSE1zuU_iD0Mk4ZGS6w9Klp9w_UN5PogsHVQV1A.webp" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                    <h2 class="fw-normal">집게사장</h2>
+                    <p>생일: 11월 30일</p>
+                    <p>성별: 남성</p>
+                    <p>종족: 게</p>
+                    <p>직장: 집게리아 사장</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 text-center">
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://i.namu.wiki/i/8Oiv3AHMytjRaakSu1DBZbxHHqdYL49T2cM5VuqfzMfYHDsBXa2GPg2uSadUlHAeup8nsFNo4ID6uys-8va1leBEbxeoakAZ-AJIMdg4hwWyffdMCjr0oiOjjL9ML1rc_IgVj4dM5DMvBO8DCfj-ow.webp" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                    <h2 class="fw-normal">플랑크톤</h2>
+                    <p>생일: 11월 30일</p>
+                    <p>성별: 남성</p>
+                    <p>종족: 요각류</p>
+                    <p>거주지: 집게리아 맞은편 미끼식당</p>
+                  </div><!-- /.col-lg-4 -->
+              </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 스펀지밥 팬 페이지. 모든 권리 보유.</p>
+    </footer>
+
+</body>
+</html>
