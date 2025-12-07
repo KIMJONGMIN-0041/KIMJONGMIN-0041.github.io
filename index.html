@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <title>나의 GitHub 홈페이지</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root { --max: 900px; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; }
+    header { padding: 28px 20px; border-bottom: 1px solid #eee; }
+    header .wrap { max-width: var(--max); margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+    nav a { margin-left: 16px; text-decoration: none; }
+    .hero { max-width: var(--max); margin: 0 auto; padding: 48px 20px; }
+    .hero h1 { margin: 0 0 12px; font-size: 32px; }
+    .grid { max-width: var(--max); margin: 0 auto; padding: 0 20px 60px; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .card { border: 1px solid #eee; border-radius: 14px; padding: 18px; }
+    footer { border-top: 1px solid #eee; padding: 24px 20px; text-align: center; color: #666; }
+    a { color: inherit; }
+    .btn { display:inline-block; padding:10px 14px; border:1px solid #222; border-radius:10px; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <strong>My Site</strong>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a class="btn" href="https://github.com/your-username">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <h1>안녕하세요! 👋</h1>
+      <p>이 페이지는 GitHub Pages로 만든 제 메인 홈페이지입니다. 아래에 프로젝트와 연락처를 정리했습니다.</p>
+    </section>
+
+    <section class="grid" id="projects">
+      <div class="card">
+        <h3>프로젝트 A</h3>
+        <p>간단 설명 한 줄.</p>
+        <p><a href="https://github.com/your-username/project-a">Repo 보기 →</a></p>
+      </div>
+      <div class="card">
+        <h3>프로젝트 B</h3>
+        <p>간단 설명 한 줄.</p>
+        <p><a href="https://your-username.github.io/project-b/">Demo 보기 →</a></p>
+      </div>
+      <div class="card">
+        <h3>연락</h3>
+        <p>이메일: you@example.com</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="y"></span> your-username
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
